@@ -1,0 +1,4 @@
+Strategy,Games,Wins,Losses,Points
+BetterThanPercentStrategy,57,42,11,130
+NMaxStrategy,65,36,25,112
+RandomStrategy,62,10,52,30

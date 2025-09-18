@@ -20,34 +20,41 @@ class Tournament:
 class DeathMatchTournament(Tournament):
     def __init__(self, strategies, envelopes_factory, win_goal=3):
         super().__init__(strategies, envelopes_factory)
+        if len(strategies) != 2:
+            raise ValueError("DeathMatchTournament requires exactly 2 strategies")
+        self.s1, self.s2 = strategies
         self.win_goal = win_goal
 
     def run(self):
-        if len(self.strategies) != 2:
-            raise ValueError("DeathMatchTournament requires exactly 2 strategies")
-
-        scores = {s.display(): 0 for s in self.strategies}
+        scores = {self.s1.display(): 0, self.s2.display(): 0}
         history = []
 
-        while max(scores.values()) < self.win_goal:
-            envelopes = self.envelopes_factory()
-            results = [Game(envelopes, s).play() for s in self.strategies]
+        while all(score < self.win_goal for score in scores.values()):
+            envelopes = self.envelopes_factory()  # שם אחיד עם האב
+            r1 = Game(envelopes, self.s1).play()
+            r2 = Game(envelopes, self.s2).play()
 
-            # מי ניצח
-            if results[0].chosen_amount > results[1].chosen_amount:
-                winner = self.strategies[0].display()
-            elif results[1].chosen_amount > results[0].chosen_amount:
-                winner = self.strategies[1].display()
+            if r1.chosen_amount > r2.chosen_amount:
+                winner = self.s1.display()
+            elif r2.chosen_amount > r1.chosen_amount:
+                winner = self.s2.display()
             else:
                 winner = None  # תיקו
 
             if winner:
                 scores[winner] += 1
-            history.append((results[0], results[1], winner))
 
-        winner = max(scores, key=scores.get)
-        return {"winner": winner, "scores": scores, "history": history}
+            history.append((
+                self.s1.display(), r1,
+                self.s2.display(), r2,
+                winner if winner else "Draw"
+            ))
 
+        return {
+            "winner": max(scores, key=scores.get),
+            "scores": scores,
+            "history": history
+        }
 
 # --- RoundRobinTournament ---
 class RoundRobinTournament(Tournament):

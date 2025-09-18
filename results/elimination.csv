@@ -1,3 +1,11 @@
 Strategy1,Chosen1,Max1,Success1,Strategy2,Chosen2,Max2,Success2,Winner
-RandomStrategy,87,988,False,NMaxStrategy,495,988,False,NMaxStrategy
-NMaxStrategy,941,999,False,BetterThanPercentStrategy,993,999,False,BetterThanPercentStrategy
+NMaxStrategy,858,999,False,RandomStrategy,456,999,False,NMaxStrategy
+BetterThanPercentStrategy,994,994,True,NMaxStrategy,301,994,False,BetterThanPercentStrategy
+NMaxStrategy,976,999,False,BetterThanPercentStrategy,999,999,True,BetterThanPercentStrategy
+RandomStrategy,665,996,False,BetterThanPercentStrategy,992,996,False,BetterThanPercentStrategy
+NMaxStrategy,931,1000,False,BetterThanPercentStrategy,990,1000,False,BetterThanPercentStrategy
+BetterThanPercentStrategy,985,989,False,RandomStrategy,119,989,False,BetterThanPercentStrategy
+BetterThanPercentStrategy,999,999,True,RandomStrategy,474,999,False,BetterThanPercentStrategy
+BetterThanPercentStrategy,998,998,True,NMaxStrategy,993,998,False,BetterThanPercentStrategy
+BetterThanPercentStrategy,987,987,True,NMaxStrategy,930,987,False,BetterThanPercentStrategy
+BetterThanPercentStrategy,978,991,False,RandomStrategy,427,991,False,BetterThanPercentStrategy

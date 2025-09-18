@@ -1,3 +1,13 @@
 Strategy1,Chosen1,Max1,Success1,Strategy2,Chosen2,Max2,Success2,Winner
-Strategy1,736,999,False,Strategy2,880,999,False,NMaxStrategy
-Strategy1,601,986,False,Strategy2,986,986,True,NMaxStrategy
+RandomStrategy,430,999,False,NMaxStrategy,989,999,False,NMaxStrategy
+RandomStrategy,935,996,False,NMaxStrategy,956,996,False,NMaxStrategy
+RandomStrategy,814,989,False,NMaxStrategy,347,989,False,RandomStrategy
+RandomStrategy,465,991,False,NMaxStrategy,883,991,False,NMaxStrategy
+RandomStrategy,676,983,False,NMaxStrategy,912,983,False,NMaxStrategy
+RandomStrategy,889,988,False,NMaxStrategy,101,988,False,RandomStrategy
+RandomStrategy,796,998,False,NMaxStrategy,967,998,False,NMaxStrategy
+RandomStrategy,360,998,False,NMaxStrategy,991,998,False,NMaxStrategy
+RandomStrategy,597,997,False,NMaxStrategy,929,997,False,NMaxStrategy
+RandomStrategy,245,969,False,NMaxStrategy,903,969,False,NMaxStrategy
+RandomStrategy,270,998,False,NMaxStrategy,904,998,False,NMaxStrategy
+RandomStrategy,629,996,False,NMaxStrategy,723,996,False,NMaxStrategy
