@@ -1,0 +1,3 @@
+Strategy1,Chosen1,Max1,Success1,Strategy2,Chosen2,Max2,Success2,Winner
+Strategy1,736,999,False,Strategy2,880,999,False,NMaxStrategy
+Strategy1,601,986,False,Strategy2,986,986,True,NMaxStrategy

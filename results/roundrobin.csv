@@ -1,0 +1,7 @@
+Strategy1,Chosen1,Max1,Success1,Strategy2,Chosen2,Max2,Success2,Winner
+RandomStrategy,567,989,False,NMaxStrategy,956,989,False,NMaxStrategy
+RandomStrategy,842,992,False,BetterThanPercentStrategy,992,992,True,BetterThanPercentStrategy
+NMaxStrategy,987,987,True,BetterThanPercentStrategy,987,987,True,
+RandomStrategy,237,990,False,NMaxStrategy,865,990,False,NMaxStrategy
+RandomStrategy,445,996,False,BetterThanPercentStrategy,45,996,False,RandomStrategy
+NMaxStrategy,998,998,True,BetterThanPercentStrategy,998,998,True,
